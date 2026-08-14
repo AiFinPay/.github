@@ -2,6 +2,8 @@
 
 # AiFinPay
 
+<img src="../assets/20260430-020219.jpg" width="120" height="120" alt="AiFinPay logo" />
+
 ### The payment protocol for autonomous AI agents
 
 Stripe for AI agents — non-custodial, pay-per-call, on-chain settlement.
@@ -52,9 +54,30 @@ AiFinPay gives any AI agent a wallet so it can pay — and get paid — for serv
 
 ## Supported Chains
 
-```
-Polygon · Solana · Avalanche · Casper · Stellar
-```
+Settlement contracts deployed across **12 mainnet networks** (+Casper as a 13th deploy):
+
+<table>
+  <tr>
+    <td align="center"><img src="../assets/chains/polygon.svg" width="32" alt="Polygon" /><br>Polygon</td>
+    <td align="center"><img src="../assets/chains/solana.svg" width="32" alt="Solana" /><br>Solana</td>
+    <td align="center"><img src="../assets/chains/avalanche.svg" width="32" alt="Avalanche" /><br>Avalanche</td>
+    <td align="center"><img src="../assets/chains/arbitrum.png" width="32" alt="Arbitrum" /><br>Arbitrum</td>
+    <td align="center"><img src="../assets/chains/bnb.svg" width="32" alt="BNB Chain" /><br>BNB Chain</td>
+    <td align="center"><img src="../assets/chains/base.svg" width="32" alt="Base" /><br>Base</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="../assets/chains/unichain.svg" width="32" alt="Unichain" /><br>Unichain</td>
+    <td align="center"><img src="../assets/chains/optimism.svg" width="32" alt="Optimism" /><br>Optimism</td>
+    <td align="center"><img src="../assets/chains/botchain.svg" width="32" alt="BOT Chain" /><br>BOT Chain</td>
+    <td align="center"><img src="../assets/chains/xrpl.svg" width="32" alt="XRPL EVM" /><br>XRPL EVM</td>
+    <td align="center"><img src="../assets/chains/near.svg" width="32" alt="NEAR" /><br>NEAR</td>
+    <td align="center"><img src="../assets/chains/aptos.svg" width="32" alt="Aptos" /><br>Aptos</td>
+  </tr>
+</table>
+
+Live state varies per chain — see the
+[network source-of-truth](https://github.com/AiFinPay/knowledge-vault/blob/main/docs/10-projects/aifinpay/network-source-of-truth.md)
+for the per-layer status matrix.
 
 ## Getting Started
 
