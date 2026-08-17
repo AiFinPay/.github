@@ -1,0 +1,94 @@
+name: Reusable security baseline
+
+on:
+  workflow_call:
+    inputs:
+      artifact_paths:
+        description: "Optional newline-separated files/globs to hash after the scan"
+        required: false
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  secrets:
+    name: Secrets — full history scan
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: gitleaks
+        run: |
+          docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:latest \
+            detect --source=/repo --redact --verbose --exit-code=1
+
+  osv:
+    name: Dependencies — OSV high/critical
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download pinned OSV scanner
+        run: |
+          curl -sSfL -o osv-scanner \
+            https://github.com/google/osv-scanner/releases/download/v2.0.2/osv-scanner_linux_amd64
+          chmod +x osv-scanner
+      - name: Scan detected manifests and lockfiles
+        run: ./osv-scanner scan source --format=json . > osv.json || true
+      - name: Fail on high or critical only
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          BAD = {"HIGH", "CRITICAL"}
+          try:
+              data = json.load(open("osv.json"))
+          except Exception as exc:
+              print(f"could not read OSV output: {exc}")
+              sys.exit(1)
+          hits = []
+          for res in data.get("results", []):
+              for pkg in res.get("packages", []):
+                  name = pkg.get("package", {}).get("name", "?")
+                  for vuln in pkg.get("vulnerabilities", []):
+                      sev = str(vuln.get("database_specific", {}).get("severity", "")).upper()
+                      if sev in BAD:
+                          hits.append(f"{sev:9} {name:24} {vuln.get('id')}")
+          for hit in sorted(set(hits)):
+              print(hit)
+          print(f"{len(set(hits))} high/critical finding(s)")
+          sys.exit(1 if hits else 0)
+          PY
+
+  artifact-hashes:
+    name: Artifact SHA-256 evidence
+    if: ${{ inputs.artifact_paths != '' }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Hash requested artifacts
+        env:
+          ARTIFACT_PATHS: ${{ inputs.artifact_paths }}
+        run: |
+          set -euo pipefail
+          : > artifact-sha256.txt
+          while IFS= read -r pattern; do
+            [ -z "$pattern" ] && continue
+            found=0
+            while IFS= read -r file; do
+              [ -f "$file" ] || continue
+              sha256sum "$file" >> artifact-sha256.txt
+              found=1
+            done < <(compgen -G "$pattern" || true)
+            if [ "$found" -eq 0 ]; then
+              echo "::error::artifact pattern matched no files: $pattern"
+              exit 1
+            fi
+          done <<< "$ARTIFACT_PATHS"
+          cat artifact-sha256.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artifact-sha256
+          path: artifact-sha256.txt
+          if-no-files-found: error
