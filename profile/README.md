@@ -31,8 +31,8 @@ AiFinPay gives any AI agent a wallet so it can pay — and get paid — for serv
 | [AIFP_2](https://github.com/AiFinPay/AIFP-2) | Core agent payment protocol — routing, wallet policy, settlement verification and receipts; x402 v2 compatibility profile. |
 | [AIFP_3](https://github.com/AiFinPay/AIFP-3) | Global Agent Passport — immutable identity, issuer/holder keys, lifecycle, and verified wallet bindings. |
 | [AIFP_4](https://github.com/AiFinPay/AIFP-4) | Open organization / corporation protocol. |
-| [AIFP_5](https://github.com/AiFinPay/AIFP-5) | Quantum-safe authorization envelopes — classical, hybrid, and post-quantum cryptographic authorization. |
-| [AIFP_6](https://github.com/AiFinPay/AIFP-6) | Agentic financial governance — machine-readable authority, limits, delegation, approvals, emergency controls and audit decisions. |
+| [AIFP_5](https://github.com/AiFinPay/AIFP-5-Quantum-Safe-Financial-Protocol) | Quantum-safe authorization envelopes — classical, hybrid, and post-quantum cryptographic authorization. |
+| [AIFP_6](https://github.com/AiFinPay/AIFP-6-Agentic-Financial-Governance-Protocol) | Agentic financial governance — machine-readable authority, limits, delegation, approvals, emergency controls and audit decisions. |
 
 ## On-Chain Contracts
 
