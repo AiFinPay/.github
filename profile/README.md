@@ -59,20 +59,29 @@ AiFinPay gives any AI agent a wallet so it can pay — and get paid — for serv
 
 Settlement contracts deployed across **13 mainnet networks**:
 
+EVM compatible
 <table>
   <tr>
-    <td align="center"><img src="../assets/chains/polygon.svg" width="32" alt="Polygon" /><br>Polygon</td>
-    <td align="center"><img src="../assets/chains/solana.svg" width="32" alt="Solana" /><br>Solana</td>
-    <td align="center"><img src="../assets/chains/avalanche.svg" width="32" alt="Avalanche" /><br>Avalanche</td>
     <td align="center"><img src="../assets/chains/arbitrum.png" width="32" alt="Arbitrum" /><br>Arbitrum</td>
-    <td align="center"><img src="../assets/chains/bnb.svg" width="32" alt="BNB Chain" /><br>BNB Chain</td>
     <td align="center"><img src="../assets/chains/base.svg" width="32" alt="Base" /><br>Base</td>
+    <td align="center"><img src="../assets/chains/bnb.svg" width="32" alt="BNB Chain" /><br>BNB Chain</td>
+    <td align="center"><img src="../assets/chains/polygon.svg" width="32" alt="Polygon" /><br>Polygon</td>
+    <td align="center"><img src="../assets/chains/optimism.svg" width="32" alt="Optimism" /><br>Optimism</td>
+  </tr> 
+  <tr>    
+    <td align="center"><img src="../assets/chains/avalanche.svg" width="32" alt="Avalanche" /><br>Avalanche</td>
+    <td align="center"><img src="../assets/chains/robinhood.png" width="32" alt="Robinhood" /><br>Robinhood</td>
+    <td align="center"><img src="../assets/chains/unichain.svg" width="32" alt="Unichain" /><br>Unichain</td>
+    <td align="center"><img src="../assets/chains/xrpl.svg" width="32" alt="XRPL EVM" /><br>XRPL EVM</td>
+    <td align="center"><img src="../assets/chains/botchain.svg" width="32" alt="BOT Chain" /><br>BOT Chain</td>
+  </tr>
+</table>
+
+Non EVM
+<table>
   </tr>
   <tr>
-    <td align="center"><img src="../assets/chains/unichain.svg" width="32" alt="Unichain" /><br>Unichain</td>
-    <td align="center"><img src="../assets/chains/optimism.svg" width="32" alt="Optimism" /><br>Optimism</td>
-    <td align="center"><img src="../assets/chains/botchain.svg" width="32" alt="BOT Chain" /><br>BOT Chain</td>
-    <td align="center"><img src="../assets/chains/xrpl.svg" width="32" alt="XRPL EVM" /><br>XRPL EVM</td>
+    <td align="center"><img src="../assets/chains/solana.svg" width="32" alt="Solana" /><br>Solana</td>
     <td align="center"><img src="../assets/chains/near.svg" width="32" alt="NEAR" /><br>NEAR</td>
     <td align="center"><img src="../assets/chains/aptos.svg" width="32" alt="Aptos" /><br>Aptos</td>
   </tr>
