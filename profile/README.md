@@ -20,7 +20,7 @@ AiFinPay gives any AI agent a wallet so it can pay — and get paid — for serv
 
 - **Pay-per-call** — agents settle each invocation exactly, no subscriptions, no pre-funding.
 - **Non-custodial** — payments flow directly wallet-to-wallet; no intermediary holds funds.
-- **Multi-chain** — Polygon, Solana, Avalanche, Casper, Stellar (and growing).
+- **Multi-chain** — EVM, Solana, Aptos and more (and growing).
 - **Agent-first** — MCP server + SDK so any agent framework can plug in minutes.
 
 ## Protocol & Standards
@@ -41,7 +41,6 @@ AiFinPay gives any AI agent a wallet so it can pay — and get paid — for serv
 | [evm-contract](https://github.com/AiFinPay/evm-contract) | Polygon | Solidity | `AiFinPayCore v1.1` with Pyth Pull Oracle. |
 | [aifinpay-avalanche](https://github.com/AiFinPay/aifinpay-avalanche) | Avalanche C-Chain | Solidity | Live & verified on mainnet (43114). Per-call settlement via Pyth + on-chain splitter. |
 | [solana-contract](https://github.com/AiFinPay/solana-contract) | Solana | Rust | Anchor program — Seat PDAs, `b2b_pay`, `b2b_pay_with_split`. Live on mainnet. |
-| [casper-contract](https://github.com/AiFinPay/casper-contract) | Casper | Rust | x402 protocol settled on Casper. Live testnet contract + bridge + MCP server. |
 
 ## Tools & Integrations
 
@@ -58,7 +57,7 @@ AiFinPay gives any AI agent a wallet so it can pay — and get paid — for serv
 
 ## Supported Chains
 
-Settlement contracts deployed across **12 mainnet networks** (+Casper as a 13th deploy):
+Settlement contracts deployed across **13 mainnet networks**:
 
 <table>
   <tr>
