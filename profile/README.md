@@ -57,7 +57,7 @@ AiFinPay gives any AI agent a wallet so it can pay — and get paid — for serv
 
 ## Supported Chains
 
-Settlement contracts deployed across **13 mainnet networks**:
+Settlement contracts deployed across **14 mainnet networks**:
 
 EVM compatible
 <table>
