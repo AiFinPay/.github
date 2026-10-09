@@ -63,19 +63,19 @@ EVM compatible
 <table>
   <tr>
     <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/arc.svg" width="32" alt="Avalanche" /><br>Arc</a></td>
-  </tr>
-  <tr>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/avalanche.svg" width="32" alt="Avalanche" /><br>Avalanche</a></td>
     <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/arbitrum.png" width="32" alt="Arbitrum" /><br>Arbitrum</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/base.svg" width="32" alt="Base" /><br>Base</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/bnb.svg" width="32" alt="BNB Chain" /><br>BNB Chain</a></td>
     <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/polygon.svg" width="32" alt="Polygon" /><br>Polygon</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/optimism.svg" width="32" alt="Optimism" /><br>Optimism</a></td>
   </tr> 
   <tr>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/avalanche.svg" width="32" alt="Avalanche" /><br>Avalanche</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/bnb.svg" width="32" alt="BNB Chain" /><br>BNB Chain</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/base.svg" width="32" alt="Base" /><br>Base</a></td>
     <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/robinhood.png" width="32" alt="Robinhood" /><br>Robinhood</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/unichain.svg" width="32" alt="Unichain" /><br>Unichain</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/optimism.svg" width="32" alt="Optimism" /><br>Optimism</a></td>
+  </tr>
+  <tr>
     <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/xrpl.svg" width="32" alt="XRPL EVM" /><br>XRPL EVM</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/unichain.svg" width="32" alt="Unichain" /><br>Unichain</a></td>
     <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/botchain.svg" width="32" alt="BOT Chain" /><br>BOT Chain</a></td>
   </tr>
 </table>
