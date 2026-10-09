@@ -62,20 +62,20 @@ Settlement contracts deployed across **14 mainnet networks**:
 EVM compatible
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/arc.svg" width="32" alt="Avalanche" /><br>Arc</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/avalanche.svg" width="32" alt="Avalanche" /><br>Avalanche</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/arbitrum.png" width="32" alt="Arbitrum" /><br>Arbitrum</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/polygon.svg" width="32" alt="Polygon" /><br>Polygon</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/arc.svg" width="32" alt="Arc" /><br>Arc</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract/blob/main/deployments/avalanche-v14-avalanche-latest.json"><img src="../assets/chains/avalanche.svg" width="32" alt="Avalanche" /><br>Avalanche</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract/blob/main/deployments/arbitrum-v14-arbitrum-latest.json"><img src="../assets/chains/arbitrum.png" width="32" alt="Arbitrum" /><br>Arbitrum</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract/blob/main/deployments/polygon-v14-polygon-latest.json"><img src="../assets/chains/polygon.svg" width="32" alt="Polygon" /><br>Polygon</a></td>
   </tr> 
   <tr>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/bnb.svg" width="32" alt="BNB Chain" /><br>BNB Chain</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/base.svg" width="32" alt="Base" /><br>Base</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/robinhood.png" width="32" alt="Robinhood" /><br>Robinhood</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/optimism.svg" width="32" alt="Optimism" /><br>Optimism</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract/blob/main/deployments/bnb-v14-bnb-latest.json"><img src="../assets/chains/bnb.svg" width="32" alt="BNB Chain" /><br>BNB Chain</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract/blob/main/deployments/base-v14-base-latest.json"><img src="../assets/chains/base.svg" width="32" alt="Base" /><br>Base</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract/blob/main/deployments/robinhood-v14-robinhood-latest.json"><img src="../assets/chains/robinhood.png" width="32" alt="Robinhood" /><br>Robinhood</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract/blob/main/deployments/optimism-v14-optimism-latest.json"><img src="../assets/chains/optimism.svg" width="32" alt="Optimism" /><br>Optimism</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/xrpl.svg" width="32" alt="XRPL EVM" /><br>XRPL EVM</a></td>
-    <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/unichain.svg" width="32" alt="Unichain" /><br>Unichain</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract/blob/main/deployments/xrplevm-v14-xrplevm-latest.json"><img src="../assets/chains/xrpl.svg" width="32" alt="XRPL EVM" /><br>XRPL EVM</a></td>
+    <td align="center"><a href="https://github.com/AiFinPay/evm-contract/blob/main/deployments/unichain-v14-unichain-latest.json"><img src="../assets/chains/unichain.svg" width="32" alt="Unichain" /><br>Unichain</a></td>
     <td align="center"><a href="https://github.com/AiFinPay/evm-contract"><img src="../assets/chains/botchain.svg" width="32" alt="BOT Chain" /><br>BOT Chain</a></td>
   </tr>
 </table>
