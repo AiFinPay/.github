@@ -4,9 +4,9 @@
 
 <img src="../assets/20260430-020219.jpg" width="120" height="120" alt="AiFinPay logo" />
 
-### Non-custodial x402 payments and on-chain settlement for autonomous AI agents
+### Non-custodial pay-per-call payments for autonomous AI agents
 
-AiFinPay is AI agent payment infrastructure for pay-per-call transactions. It gives agents wallets to pay for services and receive payments through the open x402 protocol, with non-custodial, on-chain settlement across multiple blockchains.
+Give agents a way to pay for digital services one request at a time, without subscriptions or a custodial payment intermediary.
 
 [AiFinPay website](https://aifinpay.io) · [Developer documentation](https://docs.aifinpay.io) · [AI agent integration guide](https://github.com/AiFinPay/aifinpay-agent-integration)
 
@@ -70,11 +70,11 @@ AiFinPay gives developers the building blocks to turn that access into an owner-
 
 ## Documentation
 
-- [docs](https://github.com/AiFinPay/docs) — AiFinPay developer documentation (Mintlify).
+- [AiFinPay developer documentation](https://github.com/AiFinPay/docs) — Mintlify documentation source.
 
-## Supported Chains
+## Network Coverage and Status
 
-Settlement contracts deployed across **14 mainnet networks**:
+AiFinPay tracks **14 mainnet networks**. Payment support and deployment status vary by chain, protocol, asset, and route; check the live capabilities and network status before integrating.
 
 EVM compatible
 <table>
@@ -153,22 +153,17 @@ AiFinPay's non-custodial approach keeps key ownership local. Supported payment c
 
 [Read payment authorization and recovery details](https://github.com/AiFinPay/sdk/blob/main/node/PAYMENT_RECEIPTS.md)
 
-<div align="center">
-
-
-</div>
-
 ## Documentation and links
 
-- **Website:** [https\://aifinpay.io](https://aifinpay.io)
-- **Quickstart:** [https\://docs.aifinpay.io/quickstart](https://docs.aifinpay.io/quickstart)
-- **Documentation:** [https\://docs.aifinpay.io](https://docs.aifinpay.io)
-- **Agent Skill:** [https\://github.com/AiFinPay/skill](https://github.com/AiFinPay/skill)
-- **SDK source:** [https\://github.com/AiFinPay/sdk](https://github.com/AiFinPay/sdk)
-- **Dashboard:** [https\://dash.aifinpay.io](https://dash.aifinpay.io)
-- **Merchant onboarding:** [https\://docs.aifinpay.io/charge/onboarding](https://docs.aifinpay.io/charge/onboarding)
-- **Live network capabilities:** [https\://aifinpay.io/api/payment-capabilities](https://aifinpay.io/api/payment-capabilities)
-- **Machine-readable agent instructions:** [https\://aifinpay.io/llms.txt](https://aifinpay.io/llms.txt)
+- **Website:** [AiFinPay](https://aifinpay.io)
+- **Quickstart:** [Developer quickstart guide](https://docs.aifinpay.io/quickstart)
+- **Documentation:** [AiFinPay developer documentation](https://docs.aifinpay.io)
+- **Agent Skill:** [AiFinPay Agent Skill](https://github.com/AiFinPay/skill)
+- **SDK source:** [AiFinPay SDK on GitHub](https://github.com/AiFinPay/sdk)
+- **Dashboard:** [AiFinPay dashboard](https://dash.aifinpay.io)
+- **Merchant onboarding:** [Merchant onboarding guide](https://docs.aifinpay.io/charge/onboarding)
+- **Live network capabilities:** [Payment capabilities API](https://aifinpay.io/api/payment-capabilities)
+- **Machine-readable agent instructions:** [AiFinPay llms.txt](https://aifinpay.io/llms.txt)
 
 **For builders:** equip your agents to pay for the resources they need.
 
