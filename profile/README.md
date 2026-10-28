@@ -1,14 +1,14 @@
 <div align="center">
 
-# AiFinPay
+# AiFinPay: AI Agent Payments
 
 <img src="../assets/20260430-020219.jpg" width="120" height="120" alt="AiFinPay logo" />
 
-### The payment protocol for autonomous AI agents
+### Non-custodial x402 payments and on-chain settlement for autonomous AI agents
 
-Stripe for AI agents — non-custodial, pay-per-call, on-chain settlement.
+AiFinPay is AI agent payment infrastructure for pay-per-call transactions. It gives agents wallets to pay for services and receive payments through the open x402 protocol, with non-custodial, on-chain settlement across multiple blockchains.
 
-[Website](https://aifinpay.io) · [Docs](https://docs.aifinpay.io) · [Integration Guide](https://github.com/AiFinPay/aifinpay-agent-integration)
+[AiFinPay website](https://aifinpay.io) · [Developer documentation](https://docs.aifinpay.io) · [AI agent integration guide](https://github.com/AiFinPay/aifinpay-agent-integration)
 
 </div>
 
@@ -16,12 +16,30 @@ Stripe for AI agents — non-custodial, pay-per-call, on-chain settlement.
 
 ## What is AiFinPay?
 
-AiFinPay gives any AI agent a wallet so it can pay — and get paid — for services on-chain. Built on the open **x402** protocol and the **AIFP** standards, it enables autonomous machine-to-machine commerce with per-call settlement across multiple blockchains.
+AiFinPay gives any AI agent a wallet so it can pay for services and receive payments on-chain. Built on the open **x402** protocol and **AIFP** standards, it enables autonomous machine-to-machine commerce with exact, per-call settlement across multiple blockchains.
 
 - **Pay-per-call** — agents settle each invocation exactly, no subscriptions, no pre-funding.
 - **Non-custodial** — payments flow directly wallet-to-wallet; no intermediary holds funds.
 - **Multi-chain** — EVM, Solana, Aptos and more (and growing).
-- **Agent-first** — MCP server + SDK so any agent framework can plug in minutes.
+- **Agent-first** — MCP server and SDK make it straightforward to integrate with agent frameworks.
+
+## Why AiFinPay?
+
+AI agents increasingly need access to resources that cost money: an API call, a premium research article, a dataset, a search result, a software tool, or a machine-readable service.
+
+AiFinPay gives developers the building blocks to turn that access into an owner-controlled payment workflow.
+
+| Capability | What it enables |
+| :---- | :---- |
+| **Agent payments** | Buy access to AiFinPay-enabled websites, APIs, data, content, and tools. |
+| **Non-custodial Agent Wallet** | Keep signing keys with the agent owner or operator instead of handing them to a payment intermediary. |
+| **Agent Passport (AIFP-3)** | A portable agent identity model with verifiable wallet ownership; global passport issuance is being rolled out. |
+| **14-network infrastructure inventory** | Multi-chain wallet and payment architecture with network-specific readiness checks; not every listed network is payment-enabled. |
+| **HTTP 402 / x402-compatible architecture** | Discover paid resources, authorize supported payment routes, and reuse verified access receipts. |
+| **0% AiFinPay fee on AIFP-2 / x402** | The current AIFP-2 protocol fee is 0%; payment availability and external network costs are separate. |
+| **Budget controls** | Configure allowed merchants, spending limits, and payment permissions. |
+| **Receipts and payment history** | Track settled payments and access entitlements. |
+| **Merchant monetization** | Charge AI agents for eligible access to websites, APIs, MCP tools, and premium resources. |
 
 ## Protocol & Standards
 
@@ -38,8 +56,7 @@ AiFinPay gives any AI agent a wallet so it can pay — and get paid — for serv
 
 | Repo | Chain | Language | Highlights |
 |---|---|---|---|
-| [evm-contract](https://github.com/AiFinPay/evm-contract) | Polygon | Solidity | `AiFinPayCore v1.1` with Pyth Pull Oracle. |
-| [aifinpay-avalanche](https://github.com/AiFinPay/aifinpay-avalanche) | Avalanche C-Chain | Solidity | Live & verified on mainnet (43114). Per-call settlement via Pyth + on-chain splitter. |
+| [evm-contract](https://github.com/AiFinPay/evm-contract) | See supported | Solidity | `AiFinPayCore v1.1` with Pyth Pull Oracle. |
 | [solana-contract](https://github.com/AiFinPay/solana-contract) | Solana | Rust | Anchor program — Seat PDAs, `b2b_pay`, `b2b_pay_with_split`. Live on mainnet. |
 
 ## Tools & Integrations
@@ -111,10 +128,54 @@ npx @aifinpay/cli init
 Then point your agent at the MCP server and give it a funded wallet. See the
 [integration guide](https://github.com/AiFinPay/aifinpay-agent-integration) for details.
 
+### Built for the developer ecosystem
+
+Use AiFinPay with JavaScript/TypeScript applications, supported Python workflows, MCP-enabled AI systems, and agents that support the Agent Skills format. Pick the integration that matches your runtime:
+
+| Need | Start here |
+| :---- | :---- |
+| **Node.js / TypeScript agent SDK** | `npm install @aifinpay/agent` |
+| **AI agent skill** | `npx skills add AiFinPay/skill` |
+| **MCP tools** | `npx -y @aifinpay/mcp@latest` |
+| **Python agent SDK** | `pip install aifinpay-agent` |
+| **Node merchant paywall** | `npm install @aifinpay/gate` |
+| **Python merchant paywall** | `pip install aifinpay-gate` |
+| **Dashboard** | [dash.aifinpay.io](https://dash.aifinpay.io) |
+
+### Developer-first security
+
+AiFinPay's non-custodial approach keeps key ownership local. Supported payment clients check merchant identity, configured owner limits, route activation, the chosen asset, and settlement evidence before treating access as paid.
+
+- No secret keys in the public passport, request metadata, or README examples.
+- No assumption that a 402 response, quote, or invoice means money moved.
+- No automatic settlement on a disabled or unverified network.
+- No second payment when the outcome of an earlier signed transaction is unresolved; follow the recovery process.
+
+[Read payment authorization and recovery details](https://github.com/AiFinPay/sdk/blob/main/node/PAYMENT_RECEIPTS.md)
+
 <div align="center">
 
----
-
-Building the rails for autonomous machine-to-machine commerce.
 
 </div>
+
+## Documentation and links
+
+- **Website:** [https\://aifinpay.io](https://aifinpay.io)
+- **Quickstart:** [https\://docs.aifinpay.io/quickstart](https://docs.aifinpay.io/quickstart)
+- **Documentation:** [https\://docs.aifinpay.io](https://docs.aifinpay.io)
+- **Agent Skill:** [https\://github.com/AiFinPay/skill](https://github.com/AiFinPay/skill)
+- **SDK source:** [https\://github.com/AiFinPay/sdk](https://github.com/AiFinPay/sdk)
+- **Dashboard:** [https\://dash.aifinpay.io](https://dash.aifinpay.io)
+- **Merchant onboarding:** [https\://docs.aifinpay.io/charge/onboarding](https://docs.aifinpay.io/charge/onboarding)
+- **Live network capabilities:** [https\://aifinpay.io/api/payment-capabilities](https://aifinpay.io/api/payment-capabilities)
+- **Machine-readable agent instructions:** [https\://aifinpay.io/llms.txt](https://aifinpay.io/llms.txt)
+
+**For builders:** equip your agents to pay for the resources they need.
+
+**For merchants:** turn eligible AI traffic into paid access to your content, APIs, and services.
+
+**AiFinPay — the payment infrastructure layer for AI.**
+
+## License
+
+MIT. See [LICENSE](https://github.com/AiFinPay/sdk/blob/main/node/LICENSE).
